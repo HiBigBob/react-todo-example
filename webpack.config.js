@@ -6,11 +6,21 @@ module.exports = {
     publicPath: "/builds/"
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loaders: ["babel"],
-      include: __dirname
-    }]
+    loaders: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loaders: ["babel"],
+            include: __dirname
+        },
+        {
+            test: /\.css$/,
+            loader: 'style!css'
+        },
+        {
+            test: /\.woff$/,
+            loader: 'url'
+        }
+    ]
   }
 }
