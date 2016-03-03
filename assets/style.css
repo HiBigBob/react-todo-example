@@ -1,0 +1,183 @@
+body {
+    font-family: serif;
+    background:#F7F9FA; 
+}
+
+ul {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 450px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+ul li {
+    padding: 10px 15px;
+    color: #333;
+    overflow: hidden;
+    width: 420px;
+    background: #ecf0f1;
+    border-top: 3px solid #F7F9FA;
+    position: relative;
+    padding-left:50px;
+}
+
+ul li.top {
+    background: #F7F9FA;
+    color: #000;
+    position: relative;
+    padding: 1px;
+    font-size: 10px;
+    float: right;
+    text-align: right;
+}
+
+ul li.head {
+    background: #27ae60;
+    color: #fff;
+    position: relative;
+    padding: 15px 15px;
+}
+
+ul li.head a {
+    color: #fff;
+    font-size:14px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+ul li.head .sort {
+    /*color: #fff;*/
+    font-size:normal;
+    margin-right: 10px;
+    /*text-decoration: none;*/
+}
+
+ul li.head a.selected {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+ul li.head .search {
+    position: absolute;
+    right: 20px;
+}
+
+ul li .done {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    float: left;
+    padding: 5px;
+    margin: -5px 15px 0 0;
+    color: #999;
+    background: #dedede;
+    box-sizing: border-box;
+    position: relative;
+}
+
+ul li.footer input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    position: absolute;
+    float: left;
+    overflow: hidden;
+    color: #333;
+    font-family: serif;
+    width: 400px;
+}
+
+ul li  .icon {
+    position: absolute;
+    left: 20px;
+}
+
+ul li.head input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    position: relative;
+    float: right;
+    overflow: hidden;
+    color: #fff;
+    font-family: serif;
+    width:100px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+ul li input:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: 'search';
+    src: url('./search.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "search";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    color: #f1f1f1;
+}
+ 
+.icon-search:before { 
+    content: '\e800'; 
+}
+
+.icon-check:before { 
+    content: '\e801'; 
+    color: #ccc;
+}
+
+.icon-check-empty:before { 
+    content: '\e802'; 
+    color: #ccc;
+}
+
+.icon-plus-squared:before { 
+    content: '\e803';
+    color: #ccc;
+}
+
+.icon-filter:before { 
+    content: '\e804'; 
+}
+
+.icon-sort:before { 
+    content: '\e805'; 
+}
+
+ul li.head input::-webkit-input-placeholder { 
+    color: #f1f1f1;
+}
+
+ul li.head input:-moz-placeholder { 
+    color:    #f1f1f1;
+    opacity:  1;
+}
+
+ul li.head input::-moz-placeholder {
+    color:    #f1f1f1;
+    opacity:  1;
+}
+
+ul li.head input:-ms-input-placeholder { 
+    color:    #f1f1f1;
+}
+
+ul li.head input:placeholder-shown { 
+    color:    #f1f1f1;
+}
+
+
