@@ -8,7 +8,7 @@ class Todo extends Component {
         todos: props.todos,
         filter: '',
         visibilityFilter: '',
-        sort: true 
+        sort: 'asc' 
     };
   }
 
@@ -34,7 +34,7 @@ class Todo extends Component {
   }
   
   sort() {
-      this.setState({sort: !this.state.sort});
+      this.setState({sort: this.state.sort === 'asc' ? 'desc' : 'asc'});
   }
 
   handleKeyDown(event) {
@@ -102,7 +102,7 @@ class Todo extends Component {
         </li>
     );
     
-    if (this.state.sort) {
+    if (this.state.sort == 'asc') {
         shownTodo.sort();
     } else {
         shownTodo.reverse();
