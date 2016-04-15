@@ -1,3 +1,4 @@
+var webpack = require("webpack");
 module.exports = {
   entry: "./index.js",
   output: {
@@ -8,7 +9,7 @@ module.exports = {
   module: {
     loaders: [
         {
-            test: /\.js$/,
+            test: /\.js?$/,
             exclude: /node_modules/,
             loaders: ["babel"],
             include: __dirname
